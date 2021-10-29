@@ -61,22 +61,22 @@ type Terminfo struct {
 	Names []string
 
 	// Bools are the bool capabilities.
-	Bools map[int]bool
+	Bools map[BoolCap]bool
 
 	// BoolsM are the missing bool capabilities.
-	BoolsM map[int]bool
+	BoolsM map[BoolCap]bool
 
 	// Nums are the num capabilities.
-	Nums map[int]int
+	Nums map[NumCap]int
 
 	// NumsM are the missing num capabilities.
-	NumsM map[int]bool
+	NumsM map[NumCap]bool
 
 	// Strings are the string capabilities.
-	Strings map[int][]byte
+	Strings map[StringCap][]byte
 
 	// StringsM are the missing string capabilities.
-	StringsM map[int]bool
+	StringsM map[StringCap]bool
 
 	// ExtBools are the extended bool capabilities.
 	ExtBools map[int]bool
